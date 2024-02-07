@@ -1,0 +1,97 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+h3,p{
+    margin: 0;
+    padding: 0;
+}
+
+.slide{
+    display: flex;
+}
+.blocHorizontal{
+    display: flex;
+    flex-direction: row;
+    width: min-content;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+}
+.container{
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    position: absolute;
+    -ms-overflow-style: none;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+.accueil{
+    background-image: url("images/accueil.png");
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    color: #f1f1f1;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.accueil h3{
+    font-size: 90px;
+    text-shadow: 4px 4px #2A0A0A;
+}
+.accueil .title{
+    margin-top: auto;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+.accueil .title p{
+    font-size: 40px;
+    text-shadow: 2px 2px #2A0A0A;
+    text-align: center;
+}
+.accueil .bottom{
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    text-shadow: 2px 2px #2A0A0A;
+    margin-top: auto;
+}
+.accueil .bottom p{
+    font-size: 40px;
+}
+.center{
+    justify-content: center;
+    align-items: center;
+    background: #2A0A0A;
+    width: auto;
+    height: 100vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+.center img{
+    height: 70%;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-size: cover;
+    transition-duration: 0.4s;
+}
+.center img:hover{
+    transition-duration: 0.4s;
+    margin-bottom: 10vh;
+}
+.footer{
+    background-image: url("images/accueil.png");
+    background-size: cover;
+    /*background: #8e8358;*/ 
+    width: 100vw;
+    height: 100vh;
+}
